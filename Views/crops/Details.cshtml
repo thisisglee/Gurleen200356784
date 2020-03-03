@@ -1,0 +1,34 @@
+﻿@model Gurleen200356784.Models.crop
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>crop</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.cropname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cropname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.seasonal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.seasonal)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.cropid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
